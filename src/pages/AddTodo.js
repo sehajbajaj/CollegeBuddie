@@ -96,6 +96,7 @@ const AddTodo = () => {
             id="subject_name"
             onChange={(e) => setSubject_Name(e.target.value)}
           >
+            <option>Choose subject</option>
             {subjects?.map((sub) => (
               <option value={sub.subject_name} key={sub.id}>
                 {sub.subject_name}
